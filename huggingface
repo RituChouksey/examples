@@ -1,0 +1,6 @@
+!pip install transformers
+from transformers import pipeline
+chat = pipeline("question-answering")
+chat(context = "Pink Floyd was an English rock band formed in London in 1965.",
+     question = "When was Pink Floyd formed?")
+
